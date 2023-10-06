@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Pirates</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #ff6108;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+
+    }
+    h2 {
+        background-color: #3b39a3;
+        color:rgb(62, 156, 52);
+        padding: 10px;
+        margin: 0;
+    }
+    div {
+        background-color:#c131bf;
+        border: 1px solid #cd7272;
+        padding: 25px;
+        margin: 12px;
+        border-radius:5px;
+
+    }
+    .treasure {
+        margin-top: 20px;
+    }
+
+    #locations, #penalty {
+        margin: 15px;
+        font-weight: bold;
+        background-color: #6f3b79;
+        padding: 10px;
+        border: 1px solid ;
+    }
+
+    #help {
+        margin: 10px;
+            background-color: #5d408f;
+            padding: 10px;
+            border: 1px solid #924c4c;
+            cursor:pointer;
+    }
+
+    p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .location img {
+            max-width: 100%;
+            max-height: 100%;
+    }
+
+    .location {
+            width: 300px;
+            height: 300px;
+            background-color: #eee;
+            border: 1px solid #e1dfdf;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    }
+
+    #game-field {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+    }
+
+
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h2>Find the treasure by Shiva Ram Reddy Marthala</h2>
+    <div class="treasure">
+        <p>Click on the location to search for treasure, beware the trapsy.</p>
+    </div>
+    <div id="location">
+        <p>Number of locations checked is zero.</p>
+    </div>
+    <div id="penalty">
+        <p>Penalty is Zero.</p>
+    </div>
+    <div >
+        <p>Click for help</p>
+    </div>
+    <div id="help">
+        <p>Help report</p>
+    </div>
+
+    
+
+</body>
