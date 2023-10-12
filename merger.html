@@ -91,19 +91,7 @@
         let cElement = document.getElementsByClassName("merger")[0]
         parent.insertBefore(element,childElement)
     }
-    function swap()
-  {
-    let mergerItemss = document.getElementsByClassName("merger")
-    let ItemLength = mergerItemss.length
-    let Element1 = mergerItemss[Math.round(Math.random()*(ItemLength-1))]
-    let Element2 = mergerItemss[Math.round(Math.random()*(ItemLength-1))]
-
-    let pElement = Element1.parentNode
     
-    const sib = Element1.nextSibling === secondElement ? Element1 : Element1.nextSibling;
-    Element2.parentNode.insertBefore(Element1, Element2);
-    pElement.insertBefore(Element2, sib);
-  }
 
 </script>
 </html>	
