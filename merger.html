@@ -100,9 +100,9 @@
 
     let pElement = Element1.parentNode
     
-    const sibA = Element1.nextSibling === secondElement ? Element1 : Element1.nextSibling;
+    const sib = Element1.nextSibling === secondElement ? Element1 : Element1.nextSibling;
     Element2.parentNode.insertBefore(Element1, Element2);
-    pElement.insertBefore(Element2, sibA);
+    pElement.insertBefore(Element2, sib);
   }
 
 </script>
